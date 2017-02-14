@@ -78,7 +78,7 @@ def add_keys_to_file(file_, keys):
         if len(keys_in_file) == 0:
             keys_in_file += keys
         # First key always wins
-        if len(keys_in_file) > 1:
+        if len(keys_in_file) >= 1:
             keys_in_file = keys_in_file[0:1]
             if keys_in_file[0] in keys:
                 keys_in_file = keys
